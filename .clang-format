@@ -1,0 +1,16 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+IncludeCategories:
+  - Regex: '^<MyLib.*'
+    Priority: 1
+  - Regex: '^<.*'
+    Priority: 2
+  - Regex: '^".*'
+    Priority: 3
+  - Regex: '.*'
+    Priority: 4
+IncludeIsMainRegex: '(Test)?$'
+SortIncludes: CaseInsensitive
+MainIncludeChar: Any
+...
